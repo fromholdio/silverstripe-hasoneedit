@@ -1,6 +1,7 @@
 <?php
 
 namespace SGN\HasOneEdit;
+
 use SilverStripe\ORM\DataObject;
 
 /**
