@@ -1,10 +1,10 @@
 <?php
 
-namespace SGN\HasOneEdit;
+namespace Fromholdio\HasOneEdit;
 
 /**
  * Trait ProvidesHasOneInlineFields
- * @package SGN\HasOneEdit
+ * @package Fromholdio\HasOneEdit
  * @mixin \SilverStripe\ORM\DataObject
  */
 trait ProvidesHasOneInlineFields

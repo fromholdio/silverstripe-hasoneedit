@@ -1,12 +1,14 @@
 # Has One Edit
 
+This is a fork from [stevie-mayhew/hasonedit](https://github.com/stevie-mayhew/hasonedit).
+
 This module allows you to directly edit the fields of a related `has_one` object directly, without having to mess around with `GridField` or links to `ModelAdmin`. If the related `has_one` doesn't exist yet, then this module also creates the object and sets up the relation for you on first write.
 
 This module has been tested editing a `has_one` in both a `GridFieldDetailForm` and on a generic `Page` in `CMSMain`.
 
 ## Requirements
 
-SilverStripe 4.x.
+SilverStripe 4.x, 5.x, 6.x.
 
 Basic testing has been carried out on 4.0.x-dev. Extensive testing may be required as SS4 becomes more solid.
 
@@ -35,4 +37,4 @@ This method will be called by `HasOneEdit::getInlineFields` even if your class d
 
 ### Using with your own form
 
-To add support to your own forms, you need to add the `SGN\HasOneEdit\UpdateFormExtension` extension to your controller and call `$this->extend('updateEditForm', $form)` before returning the form to the template. Without this, the fields will not get populated with the values from the `has_one` though saving will work.
+To add support to your own forms, you need to add the `Fromholdio\HasOneEdit\UpdateFormExtension` extension to your controller and call `$this->extend('updateEditForm', $form)` before returning the form to the template. Without this, the fields will not get populated with the values from the `has_one` though saving will work.

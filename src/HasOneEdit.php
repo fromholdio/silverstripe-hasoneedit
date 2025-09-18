@@ -1,12 +1,12 @@
 <?php
 
-namespace SGN\HasOneEdit;
+namespace Fromholdio\HasOneEdit;
 
 use SilverStripe\ORM\DataObject;
 
 /**
  * Class HasOneEdit
- * @package SGN\HasOneEdit
+ * @package Fromholdio\HasOneEdit
  */
 class HasOneEdit
 {
@@ -84,7 +84,7 @@ class HasOneEdit
      */
     public static function getInlineFields(DataObject $parent, string $relation, ?array $fieldsToShow = [])
     {
-        /** @var \SilverStripe\ORM\DataObject|\SGN\HasOneEdit\ProvidesHasOneInlineFields $relatedObject */
+        /** @var \SilverStripe\ORM\DataObject|\Fromholdio\HasOneEdit\ProvidesHasOneInlineFields $relatedObject */
         $relatedObject = static::getRelationRecord($parent, $relation);
 
         return $relatedObject->provideHasOneInlineFields($relation, $fieldsToShow);

@@ -1,6 +1,6 @@
 <?php
 
-namespace SGN\HasOneEdit;
+namespace Fromholdio\HasOneEdit;
 
 use SilverStripe\Core\Extension;
 use SilverStripe\ORM\DataObject;

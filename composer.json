@@ -1,22 +1,22 @@
 {
-    "name": "stevie-mayhew/hasoneedit",
+    "name": "fromholdio/silverstripe-hasoneedit",
     "type": "silverstripe-vendormodule",
     "description": "Allows editing the fields of a has_one object directly in the CMS",
     "keywords": ["silverstripe", "has_one", "cms"],
     "license": "WTFPL",
-    "authors": [{
-        "name": "Simon Welsh",
-        "email": "simon@simon.geek.nz",
-        "homepage": "http://simon.geek.nz"
-    }],
+    "authors": [
+        {"name": "Simon Welsh", "email": "simon@simon.geek.nz", "homepage": "http://simon.geek.nz"},
+        {"name": "Luke Fromhold", "email": "luke@fromhold.io", "homepage": "https://github.com/fromholdio"}
+    ],
     "require": {
         "silverstripe/asset-admin": "^3.0"
     },
     "replace" : {
+        "stevie-mayhew/hasoneedit": "*",
         "simonwelsh/hasoneedit": "*"
     },
     "autoload": {
-        "psr-4": {"SGN\\HasOneEdit\\": "src/"}
+        "psr-4": {"Fromholdio\\HasOneEdit\\": "src/"}
     },
     "extra": {
         "branch-alias": {

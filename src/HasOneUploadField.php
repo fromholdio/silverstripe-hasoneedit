@@ -1,6 +1,6 @@
 <?php
 
-namespace SGN\HasOneEdit;
+namespace Fromholdio\HasOneEdit;
 
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\File;

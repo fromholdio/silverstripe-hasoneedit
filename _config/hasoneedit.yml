@@ -4,13 +4,13 @@ After: '#coreextensions'
 ---
 SilverStripe\CMS\Controllers\CMSMain:
   extensions:
-    - SGN\HasOneEdit\UpdateFormExtension
+    - Fromholdio\HasOneEdit\UpdateFormExtension
 SilverStripe\Forms\GridField\GridFieldDetailForm_ItemRequest:
   extensions:
-    - SGN\HasOneEdit\UpdateFormExtension
+    - Fromholdio\HasOneEdit\UpdateFormExtension
 SilverStripe\ORM\DataObject:
   extensions:
-    - SGN\HasOneEdit\DataObjectExtension
+    - Fromholdio\HasOneEdit\DataObjectExtension
 
 ---
 Name: hasoneedit-siteconfig
@@ -20,4 +20,4 @@ Only:
 ---
 SilverStripe\SiteConfig\SiteConfigLeftAndMain:
   extensions:
-    - SGN\HasOneEdit\UpdateFormExtension
+    - Fromholdio\HasOneEdit\UpdateFormExtension
