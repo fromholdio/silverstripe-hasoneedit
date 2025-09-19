@@ -36,7 +36,7 @@ class UpdateFormExtension extends Extension
             }
 
             // Skip populating value if record doesn't exist yet, or field already has value
-            if (!$record || $field->Value()) continue;
+            if (!$record || $field->getValue()) continue;
 
             list($relationName, $fieldOnRelation) = HasOneEdit::getRelationNameAndField($name);
             $relatedObject = HasOneEdit::getRelationRecord($record, $relationName);
