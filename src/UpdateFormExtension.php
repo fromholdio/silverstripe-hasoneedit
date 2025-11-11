@@ -5,6 +5,7 @@ namespace Fromholdio\HasOneEdit;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Core\Extension;
 use SilverStripe\Forms\Form;
+use SilverStripe\ORM\DataObject;
 
 class UpdateFormExtension extends Extension
 {
@@ -43,7 +44,11 @@ class UpdateFormExtension extends Extension
             if ($relatedObject === null) continue;
 
             if ($relatedObject->hasField($fieldOnRelation)) {
-                $field->setValue($relatedObject->getField($fieldOnRelation));
+                $relatedValue = $relatedObject->getField($fieldOnRelation);
+                if ($relatedValue instanceof DataObject) {
+                    $relatedValue = $relatedValue->ID;
+                }
+                $field->setValue($relatedValue);
             }
         }
     }
